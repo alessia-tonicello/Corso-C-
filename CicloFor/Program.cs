@@ -45,7 +45,7 @@ namespace CicloFor
 
             for (int i = 1; i <= numero; i++)
             {
-                somma = somma + i;
+                somma += i;
             }
             Console.WriteLine("La somma totale da 1 a " + numero + " è: " + somma);
             

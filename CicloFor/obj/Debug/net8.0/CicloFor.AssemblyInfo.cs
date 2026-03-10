@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CicloFor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+118615e1d36df95e83a913e578a5b363c238b159")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d601c79ea872f588e9906aec9ca1c3409f77244a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CicloFor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CicloFor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
