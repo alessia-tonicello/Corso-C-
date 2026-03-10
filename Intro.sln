@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intro", "Intro\Intro.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch", "Switch\Switch.csproj", "{836BECC9-A86D-46B6-9076-C52C1F12C096}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CicloFor", "CicloFor\CicloFor.csproj", "{1E881C24-46E5-4E03-B9A0-960AA854A665}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{836BECC9-A86D-46B6-9076-C52C1F12C096}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{836BECC9-A86D-46B6-9076-C52C1F12C096}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{836BECC9-A86D-46B6-9076-C52C1F12C096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E881C24-46E5-4E03-B9A0-960AA854A665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E881C24-46E5-4E03-B9A0-960AA854A665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E881C24-46E5-4E03-B9A0-960AA854A665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E881C24-46E5-4E03-B9A0-960AA854A665}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
