@@ -1,0 +1,15 @@
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\bin\Debug\net8.0\CicloWhile.exe
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\bin\Debug\net8.0\CicloWhile.deps.json
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\bin\Debug\net8.0\CicloWhile.runtimeconfig.json
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\bin\Debug\net8.0\CicloWhile.dll
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\bin\Debug\net8.0\CicloWhile.pdb
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\CicloWhile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\CicloWhile.AssemblyInfoInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\CicloWhile.AssemblyInfo.cs
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\CicloWhile.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\CicloWhile.sourcelink.json
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\CicloWhile.dll
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\refint\CicloWhile.dll
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\CicloWhile.pdb
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\CicloWhile.genruntimeconfig.cache
+C:\Users\Administrator\RiderProjects\Intro\CicloWhile\obj\Debug\net8.0\ref\CicloWhile.dll

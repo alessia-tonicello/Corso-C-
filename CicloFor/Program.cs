@@ -49,9 +49,6 @@ namespace CicloFor
             }
             Console.WriteLine("La somma totale da 1 a " + numero + " è: " + somma);
             
-                
-                
-                
         }
 
     }
