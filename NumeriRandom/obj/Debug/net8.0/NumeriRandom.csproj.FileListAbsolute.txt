@@ -1,0 +1,15 @@
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\bin\Debug\net8.0\NumeriRandom.exe
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\bin\Debug\net8.0\NumeriRandom.deps.json
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\bin\Debug\net8.0\NumeriRandom.runtimeconfig.json
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\bin\Debug\net8.0\NumeriRandom.dll
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\bin\Debug\net8.0\NumeriRandom.pdb
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\NumeriRandom.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\NumeriRandom.AssemblyInfoInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\NumeriRandom.AssemblyInfo.cs
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\NumeriRandom.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\NumeriRandom.sourcelink.json
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\NumeriRandom.dll
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\refint\NumeriRandom.dll
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\NumeriRandom.pdb
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\NumeriRandom.genruntimeconfig.cache
+C:\Users\Administrator\RiderProjects\Intro\NumeriRandom\obj\Debug\net8.0\ref\NumeriRandom.dll

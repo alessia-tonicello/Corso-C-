@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CicloFor", "CicloFor\CicloF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CicloWhile", "CicloWhile\CicloWhile.csproj", "{0D507643-B727-4BC7-89DA-7434F6447784}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doWhile", "doWhile\doWhile.csproj", "{17AF6002-AAAE-428F-9CA6-C13902FDC4B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumeriRandom", "NumeriRandom\NumeriRandom.csproj", "{ADC39685-9646-44B9-8A08-25F7CA2748D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{0D507643-B727-4BC7-89DA-7434F6447784}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D507643-B727-4BC7-89DA-7434F6447784}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D507643-B727-4BC7-89DA-7434F6447784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17AF6002-AAAE-428F-9CA6-C13902FDC4B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17AF6002-AAAE-428F-9CA6-C13902FDC4B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17AF6002-AAAE-428F-9CA6-C13902FDC4B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17AF6002-AAAE-428F-9CA6-C13902FDC4B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC39685-9646-44B9-8A08-25F7CA2748D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC39685-9646-44B9-8A08-25F7CA2748D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC39685-9646-44B9-8A08-25F7CA2748D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC39685-9646-44B9-8A08-25F7CA2748D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
