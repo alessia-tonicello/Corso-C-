@@ -1,0 +1,15 @@
+C:\Users\Administrator\RiderProjects\Intro\metodi\bin\Debug\net8.0\metodi.exe
+C:\Users\Administrator\RiderProjects\Intro\metodi\bin\Debug\net8.0\metodi.deps.json
+C:\Users\Administrator\RiderProjects\Intro\metodi\bin\Debug\net8.0\metodi.runtimeconfig.json
+C:\Users\Administrator\RiderProjects\Intro\metodi\bin\Debug\net8.0\metodi.dll
+C:\Users\Administrator\RiderProjects\Intro\metodi\bin\Debug\net8.0\metodi.pdb
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\metodi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\metodi.AssemblyInfoInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\metodi.AssemblyInfo.cs
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\metodi.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\metodi.sourcelink.json
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\metodi.dll
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\refint\metodi.dll
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\metodi.pdb
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\metodi.genruntimeconfig.cache
+C:\Users\Administrator\RiderProjects\Intro\metodi\obj\Debug\net8.0\ref\metodi.dll
