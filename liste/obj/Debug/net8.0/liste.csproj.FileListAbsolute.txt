@@ -1,0 +1,15 @@
+C:\Users\Administrator\RiderProjects\Intro\liste\bin\Debug\net8.0\liste.exe
+C:\Users\Administrator\RiderProjects\Intro\liste\bin\Debug\net8.0\liste.deps.json
+C:\Users\Administrator\RiderProjects\Intro\liste\bin\Debug\net8.0\liste.runtimeconfig.json
+C:\Users\Administrator\RiderProjects\Intro\liste\bin\Debug\net8.0\liste.dll
+C:\Users\Administrator\RiderProjects\Intro\liste\bin\Debug\net8.0\liste.pdb
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\liste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\liste.AssemblyInfoInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\liste.AssemblyInfo.cs
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\liste.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\liste.sourcelink.json
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\liste.dll
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\refint\liste.dll
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\liste.pdb
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\liste.genruntimeconfig.cache
+C:\Users\Administrator\RiderProjects\Intro\liste\obj\Debug\net8.0\ref\liste.dll

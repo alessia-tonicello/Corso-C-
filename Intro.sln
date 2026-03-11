@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "doWhile", "doWhile\doWhile.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumeriRandom", "NumeriRandom\NumeriRandom.csproj", "{ADC39685-9646-44B9-8A08-25F7CA2748D6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{C4317162-5E31-463A-AF75-8D2207B8404C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "liste", "liste\liste.csproj", "{08F7BA3D-B5B3-4F83-A24E-3232F86640A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,13 @@ Global
 		{ADC39685-9646-44B9-8A08-25F7CA2748D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADC39685-9646-44B9-8A08-25F7CA2748D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADC39685-9646-44B9-8A08-25F7CA2748D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4317162-5E31-463A-AF75-8D2207B8404C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4317162-5E31-463A-AF75-8D2207B8404C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4317162-5E31-463A-AF75-8D2207B8404C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4317162-5E31-463A-AF75-8D2207B8404C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F7BA3D-B5B3-4F83-A24E-3232F86640A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F7BA3D-B5B3-4F83-A24E-3232F86640A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F7BA3D-B5B3-4F83-A24E-3232F86640A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F7BA3D-B5B3-4F83-A24E-3232F86640A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
