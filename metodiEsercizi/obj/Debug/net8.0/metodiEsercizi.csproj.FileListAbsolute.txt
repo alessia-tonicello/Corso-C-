@@ -1,0 +1,15 @@
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\metodiEsercizi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\metodiEsercizi.AssemblyInfoInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\metodiEsercizi.AssemblyInfo.cs
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\metodiEsercizi.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\metodiEsercizi.sourcelink.json
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\bin\Debug\net8.0\metodiEsercizi.exe
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\bin\Debug\net8.0\metodiEsercizi.deps.json
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\bin\Debug\net8.0\metodiEsercizi.runtimeconfig.json
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\bin\Debug\net8.0\metodiEsercizi.dll
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\bin\Debug\net8.0\metodiEsercizi.pdb
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\metodiEsercizi.dll
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\refint\metodiEsercizi.dll
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\metodiEsercizi.pdb
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\metodiEsercizi.genruntimeconfig.cache
+C:\Users\Administrator\RiderProjects\Intro\metodiEsercizi\obj\Debug\net8.0\ref\metodiEsercizi.dll

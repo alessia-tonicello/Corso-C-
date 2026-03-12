@@ -1,0 +1,15 @@
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\bin\Debug\net8.0\proprietàClassi.exe
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\bin\Debug\net8.0\proprietàClassi.deps.json
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\bin\Debug\net8.0\proprietàClassi.runtimeconfig.json
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\bin\Debug\net8.0\proprietàClassi.dll
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\bin\Debug\net8.0\proprietàClassi.pdb
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\proprietàClassi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\proprietàClassi.AssemblyInfoInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\proprietàClassi.AssemblyInfo.cs
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\proprietàClassi.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\proprietàClassi.sourcelink.json
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\proprietàClassi.dll
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\refint\proprietàClassi.dll
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\proprietàClassi.pdb
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\proprietàClassi.genruntimeconfig.cache
+C:\Users\Administrator\RiderProjects\Intro\proprietàClassi\obj\Debug\net8.0\ref\proprietàClassi.dll
