@@ -1,10 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NumeriRandom
+namespace Tombola
 {
     internal class Program
     {
+        class Giocatore
+        {
+            public string Nome;
+            public List<Cartella> MieCartelle = new List<Cartella>();
+
+            public Giocatore(string nome, int quante)
+            {
+                Nome = nome;
+                for (int i = 0; i < quante; i++)
+                {
+                    MieCartelle.Add(new Cartella());
+                }
+            }
+        }
+
         class Cartella
         {
             public int[,] numeri = new int[9, 3];
@@ -67,16 +82,10 @@ namespace NumeriRandom
                 {
                     for (int i = 0; i < 9; i++)
                     {
-                        if (numeri[i, j] == 0)
-                        {
-                            Console.Write("--\t");
-                        }
-                        else
-                        {
-                            Console.Write(numeri[i, j] + "\t");
-                        }
+                        if (numeri[i, j] == 0) Console.Write("--\t");
+                        else if (numeri[i, j] == -1) Console.Write("X\t");
+                        else Console.Write(numeri[i, j] + "\t");
                     }
-
                     Console.WriteLine("\n");
                 }
             }
@@ -84,28 +93,36 @@ namespace NumeriRandom
 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Inserisci numero cartelle: ");
-            int numeroCartelle = int.Parse(Console.ReadLine());
+            Console.WriteLine("Numero giocatori: ");
+            int numeroGiocatori = int.Parse(Console.ReadLine());
 
-            List<Cartella> mieCartelle = new List<Cartella>();
+            List<Giocatore> listaGiocatori = new List<Giocatore>();
 
-            for (int k = 0; k < numeroCartelle; k++)
+            for (int i = 0; i < numeroGiocatori; i++)
             {
-                Console.WriteLine("CARTELLA NUMERO " + (k + 1));
-                Cartella nuova = new Cartella();
-                nuova.StampaCartella();
-                mieCartelle.Add(nuova);
+                Console.WriteLine("\nGiocatore " + (i + 1));
+                Console.Write("Nome: ");
+                string nome = Console.ReadLine();
+                
+                Console.Write("Numero cartelle: ");
+                int quante = int.Parse(Console.ReadLine());
+
+                // Creiamo il giocatore e le sue cartelle
+                Giocatore nuovoG = new Giocatore(nome, quante);
+                
+                // Stampiamo subito le sue cartelle per conferma
+                foreach (var c in nuovoG.MieCartelle)
+                {
+                    c.StampaCartella();
+                }
+
+                listaGiocatori.Add(nuovoG);
             }
 
             Console.WriteLine("-----------------------");
-            Console.WriteLine("TABELLONE");
-
-
-            //TABELLONE
-            List<int> tabellone = new List<int>();
+            Console.WriteLine("TABELLONE INIZIALE");
 
             int[,] numeriTabellone = new int[9, 10];
-
             int contatore = 1;
             for (int i = 0; i < 9; i++)
             {
@@ -115,12 +132,10 @@ namespace NumeriRandom
                     contatore++;
                     Console.Write(numeriTabellone[i, j] + "\t");
                 }
-
                 Console.WriteLine();
             }
 
-
-            //ESTRAZIONE
+            // ESTRAZIONE
             List<int> sacchetto = new List<int>();
             for (int n = 1; n <= 90; n++) sacchetto.Add(n);
 
@@ -140,63 +155,66 @@ namespace NumeriRandom
 
                 int indice = random2.Next(0, sacchetto.Count);
                 int numeroEstratto = sacchetto[indice];
-
                 sacchetto.RemoveAt(indice);
                 estratti.Add(numeroEstratto);
 
                 Console.Clear();
                 Console.WriteLine("NUMERO ESTRATTO: " + numeroEstratto);
 
-
-                for (int i = 0; i < mieCartelle.Count; i++)
+                // CONTROLLO CARTELLE DI OGNI GIOCATORE
+                foreach (Giocatore g in listaGiocatori)
                 {
-                    Cartella c = mieCartelle[i];
-                    int totaliInCartella = 0;
-
-                    for (int righe = 0; righe < 3; righe++)
+                    for (int i = 0; i < g.MieCartelle.Count; i++)
                     {
-                        int numeriSegnatiInRiga = 0;
-                        for (int col = 0; col < 9; col++)
+                        Cartella c = g.MieCartelle[i];
+                        int totaliInCartella = 0;
+
+                        for (int righe = 0; righe < 3; righe++)
                         {
-                            if (c.numeri[col, righe] == numeroEstratto) c.numeri[col, righe] = -1;
-                            if (c.numeri[col, righe] == -1)
+                            int numeriSegnatiInRiga = 0;
+                            for (int col = 0; col < 9; col++)
                             {
-                                numeriSegnatiInRiga++;
-                                totaliInCartella++;
+                                if (c.numeri[col, righe] == numeroEstratto) c.numeri[col, righe] = -1;
+                                if (c.numeri[col, righe] == -1)
+                                {
+                                    numeriSegnatiInRiga++;
+                                    totaliInCartella++;
+                                }
+                            }
+
+                            if (numeriSegnatiInRiga == 2 && vincitaMassimaComune < 2)
+                            {
+                                Console.WriteLine("AMBO! Giocatore: " + g.Nome + " (Cartella " + (i + 1) + ")");
+                                vincitaMassimaComune = 2;
+                            }
+                            else if (numeriSegnatiInRiga == 3 && vincitaMassimaComune < 3)
+                            {
+                                Console.WriteLine("TERNA! Giocatore: " + g.Nome + " (Cartella " + (i + 1) + ")");
+                                vincitaMassimaComune = 3;
+                            }
+                            else if (numeriSegnatiInRiga == 4 && vincitaMassimaComune < 4)
+                            {
+                                Console.WriteLine("QUATERNA! Giocatore: " + g.Nome + " (Cartella " + (i + 1) + ")");
+                                vincitaMassimaComune = 4;
+                            }
+                            else if (numeriSegnatiInRiga == 5 && vincitaMassimaComune < 5)
+                            {
+                                Console.WriteLine("CINQUINA! Giocatore: " + g.Nome + " (Cartella " + (i + 1) + ")");
+                                vincitaMassimaComune = 5;
                             }
                         }
 
-                        if (numeriSegnatiInRiga == 2 && vincitaMassimaComune < 2)
+                        if (totaliInCartella == 15)
                         {
-                            Console.WriteLine("AMBO! Cartella Giocatore: " + (i + 1));
-                            vincitaMassimaComune = 2;
-                        }
-                        else if (numeriSegnatiInRiga == 3 && vincitaMassimaComune < 3)
-                        {
-                            Console.WriteLine("TERNA! Cartella Giocatore: " + (i + 1));
-                            vincitaMassimaComune = 3;
-                        }
-                        else if (numeriSegnatiInRiga == 4 && vincitaMassimaComune < 4)
-                        {
-                            Console.WriteLine("QUATERNA! Cartella Giocatore: " + (i + 1));
-                            vincitaMassimaComune = 4;
-                        }
-                        else if (numeriSegnatiInRiga == 5 && vincitaMassimaComune < 5)
-                        {
-                            Console.WriteLine("CINQUINA! Cartella Giocatore: " + (i + 1));
-                            vincitaMassimaComune = 5;
+                            Console.WriteLine("TOMBOLA! Vince " + g.Nome + " con la cartella " + (i + 1));
+                            vittoria = true;
+                            break;
                         }
                     }
-
-                    if (totaliInCartella == 15)
-                    {
-                        Console.WriteLine("TOMBOLA! Cartella Giocatore: " + (i + 1));
-                        vittoria = true;
-                        break;
-                    }
+                    if (vittoria) break;
                 }
 
-
+                // CONTROLLO CARTELLE TABELLONE
                 if (vittoria != true)
                 {
                     for (int i = 0; i < CartelleTabellone.Count; i++)
@@ -248,6 +266,9 @@ namespace NumeriRandom
                     }
                 }
             }
+            
+            Console.WriteLine("\nIl gioco è terminato. Grazie per aver giocato!");
+            Console.ReadKey();
         }
     }
 }
