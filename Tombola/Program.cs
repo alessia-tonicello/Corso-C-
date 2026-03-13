@@ -87,17 +87,20 @@ namespace NumeriRandom
             Console.WriteLine("Inserisci numero cartelle: ");
             int numeroCartelle = int.Parse(Console.ReadLine());
 
+            List<Cartella> mieCartelle = new List<Cartella>();
+
             for (int k = 0; k < numeroCartelle; k++)
             {
                 Console.WriteLine("CARTELLA NUMERO " + (k + 1));
-                Cartella c = new Cartella();
-                c.StampaCartella();
+                Cartella nuova = new Cartella();
+                nuova.StampaCartella();
+                mieCartelle.Add(nuova);
             }
-            
+
             Console.WriteLine("-----------------------");
             Console.WriteLine("TABELLONE");
 
-            
+
             //TABELLONE
             List<int> tabellone = new List<int>();
 
@@ -115,61 +118,136 @@ namespace NumeriRandom
 
                 Console.WriteLine();
             }
-            
+
+
             //ESTRAZIONE
             List<int> sacchetto = new List<int>();
             for (int n = 1; n <= 90; n++) sacchetto.Add(n);
 
             Random random2 = new Random();
             List<int> estratti = new List<int>();
-            int vincitaAttuale = 1;
-            
-            while (sacchetto.Count > 0)
+            int vincitaMassimaComune = 1;
+
+            List<Cartella> CartelleTabellone = new List<Cartella>();
+            for (int t = 0; t < 6; t++) CartelleTabellone.Add(new Cartella());
+
+            bool vittoria = false;
+
+            while (sacchetto.Count > 0 && vittoria != true)
             {
                 Console.WriteLine("\nPremi INVIO per estrarre un numero...");
                 Console.ReadLine();
-                
+
                 int indice = random2.Next(0, sacchetto.Count);
                 int numeroEstratto = sacchetto[indice];
-                
-                sacchetto.RemoveAt(indice);
-                tabellone.Add(numeroEstratto); 
 
-                Console.Clear(); 
-                Console.WriteLine("   NUMERO ESTRATTO: " + numeroEstratto);
-                
-                Console.WriteLine("\nNumeri rimasti nel sacchetto: " + sacchetto.Count);
-                
-                
-                for (int r = 0; r < 3; r++)
+                sacchetto.RemoveAt(indice);
+                estratti.Add(numeroEstratto);
+
+                Console.Clear();
+                Console.WriteLine("NUMERO ESTRATTO: " + numeroEstratto);
+
+
+                for (int i = 0; i < mieCartelle.Count; i++)
                 {
-                    int numeriSegnatiInRiga = 0;
-                    
-    
-                    for (int col = 0; col < 9; col++)
+                    Cartella c = mieCartelle[i];
+                    int totaliInCartella = 0;
+
+                    for (int righe = 0; righe < 3; righe++)
                     {
-                        // Se il numero è quello estratto, lo segniamo con -1
-                        if (c.numeri[col, r] == numeroEstratto)
+                        int numeriSegnatiInRiga = 0;
+                        for (int col = 0; col < 9; col++)
                         {
-                            c.numeri[col, r] = -1; 
+                            if (c.numeri[col, righe] == numeroEstratto) c.numeri[col, righe] = -1;
+                            if (c.numeri[col, righe] == -1)
+                            {
+                                numeriSegnatiInRiga++;
+                                totaliInCartella++;
+                            }
                         }
 
-                        // Contiamo quanti numeri segnati (-1) abbiamo in questa riga
-                        if (c.numeri[col, r] == -1)
+                        if (numeriSegnatiInRiga == 2 && vincitaMassimaComune < 2)
                         {
-                            numeriSegnatiInRiga++;
+                            Console.WriteLine("AMBO! Cartella Giocatore: " + (i + 1));
+                            vincitaMassimaComune = 2;
+                        }
+                        else if (numeriSegnatiInRiga == 3 && vincitaMassimaComune < 3)
+                        {
+                            Console.WriteLine("TERNA! Cartella Giocatore: " + (i + 1));
+                            vincitaMassimaComune = 3;
+                        }
+                        else if (numeriSegnatiInRiga == 4 && vincitaMassimaComune < 4)
+                        {
+                            Console.WriteLine("QUATERNA! Cartella Giocatore: " + (i + 1));
+                            vincitaMassimaComune = 4;
+                        }
+                        else if (numeriSegnatiInRiga == 5 && vincitaMassimaComune < 5)
+                        {
+                            Console.WriteLine("CINQUINA! Cartella Giocatore: " + (i + 1));
+                            vincitaMassimaComune = 5;
                         }
                     }
 
-                    // 2. Controlliamo la vincita in questa riga
-                    if (numeriSegnatiInRiga == 2) Console.WriteLine("AMBO in riga " + (r + 1));
-                    else if (numeriSegnatiInRiga == 3) Console.WriteLine("TERNA in riga " + (r + 1));
-                    else if (numeriSegnatiInRiga == 4) Console.WriteLine("QUATERNA in riga " + (r + 1));
-                    else if (numeriSegnatiInRiga == 5) Console.WriteLine("CINQUINA in riga " + (r + 1));
+                    if (totaliInCartella == 15)
+                    {
+                        Console.WriteLine("TOMBOLA! Cartella Giocatore: " + (i + 1));
+                        vittoria = true;
+                        break;
+                    }
+                }
+
+
+                if (vittoria != true)
+                {
+                    for (int i = 0; i < CartelleTabellone.Count; i++)
+                    {
+                        Cartella ct = CartelleTabellone[i];
+                        int totaliInTab = 0;
+
+                        for (int rT = 0; rT < 3; rT++)
+                        {
+                            int segnatiInRigaT = 0;
+                            for (int cT = 0; cT < 9; cT++)
+                            {
+                                if (ct.numeri[cT, rT] == numeroEstratto) ct.numeri[cT, rT] = -1;
+                                if (ct.numeri[cT, rT] == -1)
+                                {
+                                    segnatiInRigaT++;
+                                    totaliInTab++;
+                                }
+                            }
+
+                            if (segnatiInRigaT == 2 && vincitaMassimaComune < 2)
+                            {
+                                Console.WriteLine("AMBO sul Tabellone! (Cartella " + (i + 1) + ")");
+                                vincitaMassimaComune = 2;
+                            }
+                            else if (segnatiInRigaT == 3 && vincitaMassimaComune < 3)
+                            {
+                                Console.WriteLine("TERNA sul Tabellone! (Cartella " + (i + 1) + ")");
+                                vincitaMassimaComune = 3;
+                            }
+                            else if (segnatiInRigaT == 4 && vincitaMassimaComune < 4)
+                            {
+                                Console.WriteLine("QUATERNA sul Tabellone! (Cartella " + (i + 1) + ")");
+                                vincitaMassimaComune = 4;
+                            }
+                            else if (segnatiInRigaT == 5 && vincitaMassimaComune < 5)
+                            {
+                                Console.WriteLine("CINQUINA sul Tabellone! (Cartella " + (i + 1) + ")");
+                                vincitaMassimaComune = 5;
+                            }
+                        }
+
+                        if (totaliInTab == 15)
+                        {
+                            Console.WriteLine("TOMBOLA sul Tabellone! (Cartella " + (i + 1) + ")");
+                            vittoria = true;
+                            break;
+                        }
+                    }
                 }
             }
-            
-            
         }
     }
 }
