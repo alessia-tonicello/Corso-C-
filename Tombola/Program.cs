@@ -100,20 +100,20 @@ namespace Tombola
 
             for (int i = 0; i < numeroGiocatori; i++)
             {
-                Console.WriteLine("\nGiocatore " + (i + 1));
+                Console.WriteLine("\n Giocatore " + (i + 1));
                 Console.Write("Nome: ");
                 string nome = Console.ReadLine();
-                
+        
                 Console.Write("Numero cartelle: ");
                 int quante = int.Parse(Console.ReadLine());
 
-                // Creiamo il giocatore e le sue cartelle
                 Giocatore nuovoG = new Giocatore(nome, quante);
-                
-                // Stampiamo subito le sue cartelle per conferma
-                foreach (var c in nuovoG.MieCartelle)
+        
+                // Usiamo il for per avere l'indice j
+                for (int j = 0; j < nuovoG.MieCartelle.Count; j++)
                 {
-                    c.StampaCartella();
+                    Console.WriteLine("\n Cartella numero: " + (j + 1) + " di " + nome);
+                    nuovoG.MieCartelle[j].StampaCartella();
                 }
 
                 listaGiocatori.Add(nuovoG);
@@ -161,7 +161,7 @@ namespace Tombola
                 Console.Clear();
                 Console.WriteLine("NUMERO ESTRATTO: " + numeroEstratto);
 
-                // CONTROLLO CARTELLE DI OGNI GIOCATORE
+                
                 foreach (Giocatore g in listaGiocatori)
                 {
                     for (int i = 0; i < g.MieCartelle.Count; i++)
@@ -214,7 +214,7 @@ namespace Tombola
                     if (vittoria) break;
                 }
 
-                // CONTROLLO CARTELLE TABELLONE
+                
                 if (vittoria != true)
                 {
                     for (int i = 0; i < CartelleTabellone.Count; i++)
@@ -266,8 +266,29 @@ namespace Tombola
                     }
                 }
             }
+          
+            Console.WriteLine("TABELLONE FINALE DEL GIOCO");
+            Console.WriteLine("(I numeri tra [ ] sono quelli estratti)\n");
+
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    int n = numeriTabellone[i, j];
+
+                    if (estratti.Contains(n))
+                    {
+                        Console.Write("[" + n + "]\t"); 
+                    }
+                    else
+                    {
+                        Console.Write(n + "\t");
+                    }
+                }
+                Console.WriteLine("\n");
+            }
             
-            Console.WriteLine("\nIl gioco è terminato. Grazie per aver giocato!");
+            Console.WriteLine("\n Il gioco è terminato. Grazie per aver giocato!");
             Console.ReadKey();
         }
     }
