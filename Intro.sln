@@ -34,6 +34,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV", "CSV\CSV.csproj", "{8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON", "JSON\JSON.csproj", "{53B4C98B-3F84-4158-B466-82E04313126A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ML.Net", "ML.Net\ML.Net.csproj", "{BA8C3985-54EC-4E8B-A2C2-ADFA580AD522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "salario", "salario\salario.csproj", "{327C529D-2149-4BDD-B859-70D68D6166AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +112,13 @@ Global
 		{53B4C98B-3F84-4158-B466-82E04313126A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53B4C98B-3F84-4158-B466-82E04313126A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53B4C98B-3F84-4158-B466-82E04313126A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8C3985-54EC-4E8B-A2C2-ADFA580AD522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8C3985-54EC-4E8B-A2C2-ADFA580AD522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8C3985-54EC-4E8B-A2C2-ADFA580AD522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8C3985-54EC-4E8B-A2C2-ADFA580AD522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{327C529D-2149-4BDD-B859-70D68D6166AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{327C529D-2149-4BDD-B859-70D68D6166AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{327C529D-2149-4BDD-B859-70D68D6166AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{327C529D-2149-4BDD-B859-70D68D6166AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

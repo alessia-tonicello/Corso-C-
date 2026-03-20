@@ -12,3 +12,4 @@ C:\Users\Administrator\RiderProjects\Intro\Intro\obj\Debug\net8.0\refint\Intro.d
 C:\Users\Administrator\RiderProjects\Intro\Intro\obj\Debug\net8.0\Intro.pdb
 C:\Users\Administrator\RiderProjects\Intro\Intro\obj\Debug\net8.0\Intro.genruntimeconfig.cache
 C:\Users\Administrator\RiderProjects\Intro\Intro\obj\Debug\net8.0\ref\Intro.dll
+C:\Users\Administrator\RiderProjects\Intro\Intro\obj\Debug\net8.0\Intro.sourcelink.json

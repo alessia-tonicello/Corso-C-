@@ -12,3 +12,4 @@ C:\Users\Administrator\RiderProjects\Intro\Switch\obj\Debug\net8.0\refint\Switch
 C:\Users\Administrator\RiderProjects\Intro\Switch\obj\Debug\net8.0\Switch.pdb
 C:\Users\Administrator\RiderProjects\Intro\Switch\obj\Debug\net8.0\Switch.genruntimeconfig.cache
 C:\Users\Administrator\RiderProjects\Intro\Switch\obj\Debug\net8.0\ref\Switch.dll
+C:\Users\Administrator\RiderProjects\Intro\Switch\obj\Debug\net8.0\Switch.sourcelink.json
